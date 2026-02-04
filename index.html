@@ -1,82 +1,33 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diks Wallet Pro+</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png" type="image/png">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Diks Wallet Pro+</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
-    <div class="container">
-        <h1>Diks Wallet Pro+</h1>
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="riwayat.html">Riwayat</a>
+    <a href="laporan.html">Laporan</a>
+</nav>
 
-        <div class="balance">
-            <h2>Saldo: Rp <span id="saldo">0</span></h2>
-            <div class="quote">
-                <p id="motivasi"></p>
-            </div>
-        </div>
+<div class="container">
+    <h1>Diks Wallet Pro+</h1>
 
-        <div class="theme-toggle">
-            <label>
-                <input type="checkbox" id="toggleTheme"> Dark Mode
-            </label>
-        </div>
-
-        <div class="form">
-            <input type="text" id="keterangan" placeholder="Keterangan">
-            <input type="number" id="jumlah" placeholder="Jumlah">
-            <select id="tipe">
-                <option value="pemasukan">Pemasukan</option>
-                <option value="pengeluaran">Pengeluaran</option>
-            </select>
-            <select id="kategori">
-                <option value="Umum">Umum</option>
-                <option value="Makan">Makan</option>
-                <option value="Transport">Transport</option>
-                <option value="Belanja">Belanja</option>
-                <option value="Gaji">Gaji</option>
-            </select>
-            <button onclick="tambahTransaksi()">Tambah</button>
-        </div>
-
-        <div class="filter">
-            <h3>Filter Riwayat</h3>
-            <select id="filterTipe" onchange="tampilkanRiwayat()">
-                <option value="all">Semua Tipe</option>
-                <option value="pemasukan">Pemasukan</option>
-                <option value="pengeluaran">Pengeluaran</option>
-            </select>
-            <select id="filterKategori" onchange="tampilkanRiwayat()">
-                <option value="all">Semua Kategori</option>
-                <option value="Umum">Umum</option>
-                <option value="Makan">Makan</option>
-                <option value="Transport">Transport</option>
-                <option value="Belanja">Belanja</option>
-                <option value="Gaji">Gaji</option>
-            </select>
-        </div>
-
-        <div class="history">
-            <h3>Riwayat Transaksi</h3>
-            <ul id="riwayat"></ul>
-        </div>
-
-        <div class="report">
-            <h3>Laporan Bulanan</h3>
-            <p>Pemasukan Bulan Ini: Rp <span id="lapPemasukan">0</span></p>
-            <p>Pengeluaran Bulan Ini: Rp <span id="lapPengeluaran">0</span></p>
-            <p>Saldo Akhir Bulan: Rp <span id="lapSaldo">0</span></p>
-        </div>
-
-        <div class="chart-container">
-            <h3>Grafik Pemasukan vs Pengeluaran</h3>
-            <canvas id="grafik"></canvas>
-        </div>
+    <div class="balance">
+        <h2>Saldo: Rp <span id="saldo">0</span></h2>
+        <div class="quote"><p id="motivasi"></p></div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="theme-toggle">
+        <label><input type="checkbox" id="toggleTheme"> Dark Mode</label>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
-    </html>
+</html>
