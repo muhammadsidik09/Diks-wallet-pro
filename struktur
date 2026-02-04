@@ -1,0 +1,10 @@
+DiksWalletPro/
+│
+├─ index.html        → Dashboard / Home
+├─ transaksi.html    → Form transaksi
+├─ riwayat.html      → Riwayat & filter
+├─ laporan.html      → Laporan & grafik trading
+├─ style.css
+├─ script.js
+├─ favicon.png
+└─ ikon.png
