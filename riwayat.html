@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riwayat - Diks Wallet Pro+</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="riwayat.html">Riwayat</a>
+    <a href="laporan.html">Laporan</a>
+</nav>
+
+<div class="container">
+    <h2>Riwayat Transaksi</h2>
+
+    <div class="filter">
+        <select id="filterTipe" onchange="tampilkanRiwayat()">
+            <option value="all">Semua Tipe</option>
+            <option value="pemasukan">Pemasukan</option>
+            <option value="pengeluaran">Pengeluaran</option>
+            <option value="deposit">Deposit</option>
+            <option value="penarikan">Penarikan</option>
+        </select>
+        <select id="filterKategori" onchange="tampilkanRiwayat()">
+            <option value="all">Semua Kategori</option>
+            <option value="Umum">Umum</option>
+            <option value="Makan">Makan</option>
+            <option value="Transport">Transport</option>
+            <option value="Belanja">Belanja</option>
+            <option value="Gaji">Gaji</option>
+        </select>
+    </div>
+
+    <ul id="riwayat"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
