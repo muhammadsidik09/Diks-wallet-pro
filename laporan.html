@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laporan - Diks Wallet Pro+</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png" type="image/png">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="riwayat.html">Riwayat</a>
+    <a href="laporan.html">Laporan</a>
+</nav>
+
+<div class="container">
+    <h2>Laporan Bulanan & Grafik Trading</h2>
+
+    <div class="report">
+        <p>Pemasukan Bulan Ini: Rp <span id="lapPemasukan">0</span></p>
+        <p>Pengeluaran Bulan Ini: Rp <span id="lapPengeluaran">0</span></p>
+        <p>Saldo Akhir Bulan: Rp <span id="lapSaldo">0</span></p>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="grafikTrading"></canvas>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
