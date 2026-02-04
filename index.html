@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diks Wallet Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Diks Wallet Pro</h1>
+
+        <div class="balance">
+            <h2>Saldo: Rp <span id="saldo">0</span></h2>
+        </div>
+
+        <div class="form">
+            <input type="text" id="keterangan" placeholder="Keterangan">
+            <input type="number" id="jumlah" placeholder="Jumlah">
+            <select id="tipe">
+                <option value="pemasukan">Pemasukan</option>
+                <option value="pengeluaran">Pengeluaran</option>
+            </select>
+            <select id="kategori">
+                <option value="Umum">Umum</option>
+                <option value="Makan">Makan</option>
+                <option value="Transport">Transport</option>
+                <option value="Belanja">Belanja</option>
+                <option value="Gaji">Gaji</option>
+            </select>
+            <button onclick="tambahTransaksi()">Tambah</button>
+        </div>
+
+        <div class="history">
+            <h3>Riwayat Transaksi</h3>
+            <ul id="riwayat"></ul>
+        </div>
+
+        <div class="chart-container">
+            <h3>Grafik Pemasukan vs Pengeluaran</h3>
+            <canvas id="grafik"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
