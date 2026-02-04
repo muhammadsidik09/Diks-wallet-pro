@@ -4,6 +4,12 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: #181818;
+    color: #f0f0f0;
 }
 
 .container {
@@ -11,15 +17,19 @@ body {
     padding: 20px;
     border-radius: 10px;
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+body.dark-mode .container {
+    background: #282828;
 }
 
 h1, h2, h3 {
     text-align: center;
 }
 
-.form {
+.form, .filter {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -31,6 +41,12 @@ input, select, button {
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+
+body.dark-mode input, body.dark-mode select {
+    background: #383838;
+    color: #f0f0f0;
+    border: 1px solid #555;
 }
 
 button {
@@ -56,6 +72,27 @@ button:hover {
     border-bottom: 1px solid #ddd;
 }
 
+body.dark-mode .history li {
+    border-bottom: 1px solid #555;
+}
+
 .chart-container {
     margin-top: 20px;
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+body.dark-mode .quote {
+    color: #ccc;
 }
